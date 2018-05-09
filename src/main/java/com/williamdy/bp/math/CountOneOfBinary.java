@@ -2,7 +2,7 @@ package com.williamdy.bp.math;
 
 public class CountOneOfBinary {
 
-    int rigtMigrate(int sig){
+    public static int rigtMigrate(int sig){
         int count = 0;
         while(sig != 0){
 
@@ -13,7 +13,7 @@ public class CountOneOfBinary {
         return count;
     }
 
-    int andByBit(int sig){
+    public static int andByBit(int sig){
         int count = 0;
         while(sig != 0){
             sig &= (sig-1);
@@ -22,9 +22,4 @@ public class CountOneOfBinary {
         return count;
     }
 
-    public static void main(String[] args) {
-        CountOneOfBinary cob = new CountOneOfBinary();
-        System.out.println(cob.rigtMigrate(9));
-        System.out.println(cob.andByBit(9));
-    }
 }
