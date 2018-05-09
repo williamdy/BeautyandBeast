@@ -6,7 +6,7 @@ public class RemoveRupLetters {
 	 * @param s string combine of a-z
 	 * @return letters in s order by dictionary
 	 */
-	public String removeDuplicateLetters(String s) {
+	public static String removeDuplicateLetters(String s) {
 		String result = null;
 		char c = 'a';
 		//如果s == null 直接返回null 否则从a-z给result找存在的字符补充
